@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  crawler:
+    build: .
+    volumes:
+      - ./data:/app/data
+    working_dir: /app
+    entrypoint: ["ruby", "amazon_crawler.rb"]

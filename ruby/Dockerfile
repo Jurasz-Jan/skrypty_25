@@ -1,10 +1,12 @@
-FROM ruby:3.3
+FROM ruby:3.4
+
+RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev
 
 WORKDIR /app
 
-COPY Gemfile Gemfile.lock ./
-RUN bundle install
+COPY . /app
 
-COPY . .
+RUN gem install bundler
+RUN bundle install || true
 
-ENTRYPOINT ["ruby", "amazon_crawler.rb"]
+CMD ["irb"]

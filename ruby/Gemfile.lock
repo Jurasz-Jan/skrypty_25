@@ -2,14 +2,18 @@ GEM
   remote: https://rubygems.org/
   specs:
     bigdecimal (3.2.2)
+    nokogiri (1.18.8-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.18.8-x86_64-linux-gnu)
       racc (~> 1.4)
     racc (1.8.1)
     sequel (5.93.0)
       bigdecimal
+    sqlite3 (2.7.0-x64-mingw-ucrt)
     sqlite3 (2.7.0-x86_64-linux-gnu)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
