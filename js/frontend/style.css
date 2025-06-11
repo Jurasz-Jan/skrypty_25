@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+.container { max-width: 600px; margin: auto; }
+section { margin-bottom: 20px; }
+button { margin-left: 5px; }
+.paid-msg { color: green; }

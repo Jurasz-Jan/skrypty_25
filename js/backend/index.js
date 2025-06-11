@@ -22,7 +22,8 @@ const db = new sqlite3.Database(DB_PATH);
 });
 
 const app = express();
-app.use(cors());
+const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'http://localhost:3000';
+app.use(cors({ origin: FRONTEND_ORIGIN }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '..', 'frontend')));
 
