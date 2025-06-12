@@ -34,3 +34,5 @@ docker-compose up --build
 ```
 
 The service will be available at `http://localhost:8080`.
+
+![alt text](image.png)
