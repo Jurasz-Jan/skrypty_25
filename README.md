@@ -65,11 +65,11 @@ Kod: folder `bash`
 Kod: folder `js`
 
 
-Shop
+### Shop
 ![image](https://github.com/user-attachments/assets/c0618e95-68aa-49d2-9874-430c8533d68d)
-Python Discord Rasa bot
+### Python Discord Rasa bot
 ![image](https://github.com/user-attachments/assets/de32e5a7-d6b6-4d88-a155-963c3f8af409)
-Lua
+### Lua
 ![image](https://github.com/user-attachments/assets/a10007d4-ea47-4244-90b1-9883087c66d0)
 
 
