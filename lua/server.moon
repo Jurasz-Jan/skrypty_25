@@ -1,2 +1,2 @@
-lapis = require "lapis"
-lapis.serve require "app"
+-- server.moon
+require("lapis.cmd.actions").serve(require("app").App, "development")

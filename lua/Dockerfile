@@ -8,4 +8,5 @@ WORKDIR /app
 COPY . .
 
 EXPOSE 8080
-CMD ["moon", "server.moon"]
+CMD ["lapis", "server", "development"]
+

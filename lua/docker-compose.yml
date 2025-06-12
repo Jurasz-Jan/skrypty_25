@@ -1,8 +1,11 @@
-version: '3.8'
+version: "3.8"
+
 services:
   api:
-    build: .
+    build:
+      context: .
+    volumes:
+      - .:/app
     ports:
       - "8080:8080"
-    working_dir: /app
-    entrypoint: ["moon", "server.moon"]
+    command: ["lapis", "server", "development"]
