@@ -63,3 +63,8 @@ Kod: folder `bash`
 ❌ **5.0** pełna konfiguracja CORS po stronie React – brak (częściowo w Node)
 
 Kod: folder `js`
+
+
+
+![image](https://github.com/user-attachments/assets/c0618e95-68aa-49d2-9874-430c8533d68d)
+
