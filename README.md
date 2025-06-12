@@ -67,4 +67,6 @@ Kod: folder `js`
 
 
 ![image](https://github.com/user-attachments/assets/c0618e95-68aa-49d2-9874-430c8533d68d)
+![image](https://github.com/user-attachments/assets/de32e5a7-d6b6-4d88-a155-963c3f8af409)
+
 
