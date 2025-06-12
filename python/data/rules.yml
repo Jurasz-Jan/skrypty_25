@@ -1,27 +1,23 @@
 version: "3.1"
 
 rules:
-- rule: greet
-  steps:
-  - intent: greet
-  - action: utter_greet
+  - rule: Say hi
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- rule: say goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
 
-- rule: activate order form
-  steps:
-  - intent: order_food
-  - action: order_form
-  - active_loop: order_form
+  - rule: Show menu
+    steps:
+      - intent: show_menu
+      - action: action_show_menu
 
-- rule: submit order form
-  condition:
-  - active_loop: order_form
-  steps:
-  - action: order_form
-  - active_loop: null
-  - action: action_submit_order
-  - action: utter_order_received
+  - rule: Show hours
+    steps:
+      - intent: ask_hours
+      - action: action_show_hours
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

@@ -1,3 +1,4 @@
+# data/stories.yml
 version: "3.1"
 
 stories:
@@ -13,11 +14,7 @@ stories:
   - intent: ask_hours
   - action: action_show_hours
 
-- story: order food path
+- story: simple goodbye
   steps:
-  - intent: order_food
-  - action: order_form
-  - active_loop: order_form
-  - active_loop: null
-  - action: action_submit_order
-  - action: utter_order_received
+  - intent: goodbye
+  - action: utter_goodbye

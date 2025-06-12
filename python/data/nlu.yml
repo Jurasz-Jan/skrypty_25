@@ -1,30 +1,93 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hi
-    - hello
-    - hey
-    - good morning
-- intent: goodbye
-  examples: |
-    - bye
-    - goodbye
-    - see you later
-- intent: ask_hours
-  examples: |
-    - what are your opening hours?
-    - when are you open?
-    - tell me the working hours
-- intent: show_menu
-  examples: |
-    - show me the menu
-    - I'd like to see the menu
-    - what dishes do you have?
-- intent: order_food
-  examples: |
-    - I want to order food
-    - I'd like to make an order
-    - I would like to order [pizza](item)
-    - order [spaghetti](item)
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+      - good morning
+      - good evening
+      - hola
+      - czesc
+      - hejka
+      - dzień dobry
+      - siema
+      - Witam
+      - Hello there!
+      - Nice to meet you
+      - Hi bot
+      - Are you there?
+      - anyone home?
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - cya
+      - do widzenia
+      - nara
+      - pa pa
+      - catch you later
+      - bye-bye
+      - I'm leaving
+      - gotta go
+      - take care
+      - good night
+      - adios
+
+  - intent: ask_hours
+    examples: |
+      - what are your opening hours?
+      - when are you open?
+      - tell me the working hours
+      - Are you open today?
+      - What time do you close?
+      - What are your business hours?
+      - Kiedy jesteście otwarci?
+      - Do której czynne?
+      - Czy pracujecie w weekendy?
+      - What are the hours of operation?
+      - How late are you open?
+      - What time do you open?
+      - Are you open on Sundays?
+      - When can I visit?
+      - What's your schedule?
+      - godziny otwarcia
+      - do której otwarte
+      - kiedy otwieracie
+
+  - intent: show_menu
+    examples: |
+      - show me the menu
+      - I'd like to see the menu
+      - what dishes do you have?
+      - What's on the menu?
+      - Can I see the full menu?
+      - What food do you offer?
+      - show me your selection
+      - Pokaż menu
+      - Co macie w ofercie?
+      - Jaki jest jadłospis?
+      - Do you have a menu?
+      - List your dishes
+      - What can I eat?
+      - What do you serve?
+      - Menu, please
+      - Show me your catalog
+      - Czy mogę zobaczyć menu?
+
+  - intent: deny # New intent for negative responses
+    examples: |
+      - no
+      - no thanks
+      - not really
+      - nope
+      - nevermind
+      - I don't want that
+      - absolutely not
+      - nie
+      - nie dziękuję
+      - raczej nie
+      - zapomnij

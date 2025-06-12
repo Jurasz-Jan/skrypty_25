@@ -5,55 +5,19 @@ intents:
   - goodbye
   - ask_hours
   - show_menu
-  - order_food
-
-entities:
-  - item
-  - quantity
-  - address
-
-slots:
-  item:
-    type: text
-    mappings:
-      - type: from_text
-
-  quantity:
-    type: text
-    mappings:
-      - type: from_text
-
-  address:
-    type: text
-    mappings:
-      - type: from_text
-
-forms:
-  order_form:
-    required_slots:
-      - item
-      - quantity
-      - address
+  - deny
 
 responses:
   utter_greet:
     - text: "Hello! Welcome to our restaurant."
   utter_goodbye:
     - text: "Goodbye!"
-  utter_ask_item:
-    - text: "What would you like to order?"
-  utter_ask_quantity:
-    - text: "How many servings would you like?"
-  utter_ask_address:
-    - text: "Please provide the delivery address."
-  utter_order_received:
-    - text: "Your order has been registered."
+
 
 actions:
   - action_show_hours
   - action_show_menu
-  - action_submit_order
-  - order_form
+
 
 session_config:
   session_expiration_time: 60
