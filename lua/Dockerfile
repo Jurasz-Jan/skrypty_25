@@ -1,9 +1,7 @@
-FROM openresty/openresty:alpine
+FROM openresty/openresty:alpine-fat
 
-# install LuaRocks and build tools
-RUN apk add --no-cache lua5.1 lua5.1-dev luarocks git build-base
+RUN apk add --no-cache git build-base openssl-dev
 
-# install dependencies
 RUN luarocks install moonscript && luarocks install lapis
 
 WORKDIR /app

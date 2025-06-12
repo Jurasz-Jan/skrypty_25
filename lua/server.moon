@@ -1,2 +1,2 @@
 lapis = require "lapis"
-lapis.serve require "lua.app"
+lapis.serve require "app"
