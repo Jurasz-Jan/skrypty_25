@@ -15,10 +15,18 @@ entities:
 slots:
   item:
     type: text
+    mappings:
+      - type: from_text
+
   quantity:
     type: text
+    mappings:
+      - type: from_text
+
   address:
     type: text
+    mappings:
+      - type: from_text
 
 forms:
   order_form:

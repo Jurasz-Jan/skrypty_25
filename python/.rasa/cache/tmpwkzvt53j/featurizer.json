@@ -1,0 +1,61 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "ask_hours": 0,
+        "back": 1,
+        "goodbye": 2,
+        "greet": 3,
+        "nlu_fallback": 4,
+        "order_food": 5,
+        "out_of_scope": 6,
+        "restart": 7,
+        "session_start": 8,
+        "show_menu": 9
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_show_hours": 13,
+        "action_show_menu": 14,
+        "action_submit_order": 15,
+        "order_form": 16,
+        "utter_ask_address": 17,
+        "utter_ask_item": 18,
+        "utter_ask_quantity": 19,
+        "utter_goodbye": 20,
+        "utter_greet": 21,
+        "utter_order_received": 22
+      },
+      "entities": {
+        "address": 0,
+        "item": 1,
+        "quantity": 2
+      },
+      "slots": {
+        "item_0": 0,
+        "quantity_0": 1,
+        "address_0": 2
+      },
+      "active_loop": {
+        "order_form": 0
+      }
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": null
+}
