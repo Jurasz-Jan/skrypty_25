@@ -71,6 +71,8 @@ Kod: folder `js`
 ![image](https://github.com/user-attachments/assets/de32e5a7-d6b6-4d88-a155-963c3f8af409)
 ### Lua
 ![image](https://github.com/user-attachments/assets/a10007d4-ea47-4244-90b1-9883087c66d0)
+### Ruby Crawler
+![image](https://github.com/user-attachments/assets/7936863c-326a-4012-9f81-ee265fe5f9a2)
 
 
 
