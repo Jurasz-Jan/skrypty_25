@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+- rule: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: activate order form
+  steps:
+  - intent: order_food
+  - action: order_form
+  - active_loop: order_form
+
+- rule: submit order form
+  condition:
+  - active_loop: order_form
+  steps:
+  - action: order_form
+  - active_loop: null
+  - action: action_submit_order
+  - action: utter_order_received
