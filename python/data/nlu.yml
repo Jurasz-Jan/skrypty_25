@@ -1,0 +1,30 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+- intent: ask_hours
+  examples: |
+    - what are your opening hours?
+    - when are you open?
+    - tell me the working hours
+- intent: show_menu
+  examples: |
+    - show me the menu
+    - I'd like to see the menu
+    - what dishes do you have?
+- intent: order_food
+  examples: |
+    - I want to order food
+    - I'd like to make an order
+    - I would like to order [pizza](item)
+    - order [spaghetti](item)
