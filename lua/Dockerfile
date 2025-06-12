@@ -2,7 +2,7 @@ FROM openresty/openresty:alpine-fat
 
 RUN apk add --no-cache git build-base openssl-dev
 
-RUN luarocks install moonscript && luarocks install lapis
+RUN luarocks install lapis
 
 WORKDIR /app
 COPY . .

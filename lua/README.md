@@ -1,6 +1,6 @@
-# MoonScript REST API
+# Lua REST API
 
-This folder contains a simple REST API written in MoonScript using the [Lapis](https://leafo.net/lapis/) framework.
+This folder contains a simple REST API written in Lua using the [Lapis](https://leafo.net/lapis/) framework.
 
 ## Requirements
 
@@ -11,7 +11,6 @@ These instructions assume a Windows environment.
 
 ```bash
 luarocks install lapis
-luarocks install moonscript
 ```
 
 ## Running
@@ -19,7 +18,7 @@ luarocks install moonscript
 Navigate to the repository directory and execute:
 
 ```bash
-moon lua/server.moon
+lua server.lua
 ```
 
 The server will start on `http://localhost:8080` by default. Endpoints for
