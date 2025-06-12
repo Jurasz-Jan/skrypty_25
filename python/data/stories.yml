@@ -1,0 +1,23 @@
+version: "3.1"
+
+stories:
+- story: greet then show menu
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: show_menu
+  - action: action_show_menu
+
+- story: ask for opening hours
+  steps:
+  - intent: ask_hours
+  - action: action_show_hours
+
+- story: order food path
+  steps:
+  - intent: order_food
+  - action: order_form
+  - active_loop: order_form
+  - active_loop: null
+  - action: action_submit_order
+  - action: utter_order_received
